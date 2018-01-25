@@ -157,3 +157,11 @@ h2 + p {
 .tm-nav-item:not(:last-child) {
     border-bottom: 1px solid silver;
 }
+
+
+/* Task 12 */
+
+input[type="text"],
+button[type="submit"] {
+    color: red;
+}
