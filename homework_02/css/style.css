@@ -111,7 +111,7 @@ h2 + p {
 
 /* Task 8 */
 
-.tm-content-box .tm-team-description-container p {
+.tm-content-box .tm-team-description-container .tm-section-description {
     text-indent: 20px;
     line-height: 1.8;
 }
