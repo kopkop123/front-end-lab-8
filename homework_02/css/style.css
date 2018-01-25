@@ -100,3 +100,10 @@ p:first-letter {
     color: gainsboro;
     letter-spacing: 5px;
 }
+
+
+/* Task 7 */
+
+h2 + p {
+    font-style: italic;
+}
