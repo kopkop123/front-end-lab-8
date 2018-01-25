@@ -13,6 +13,9 @@ write your code here
 
 */
 
+
+/* Task 1 */
+
 @media print {
     #about,
     #ideas,
@@ -61,4 +64,24 @@ write your code here
     #home {
         margin-bottom: 0;
     }
+}
+
+
+/* Task 2 */
+
+
+
+/* Task 3 */
+
+p:first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+
+/* Task 4 */
+
+.tm-sidebar,
+.tm-content-box {
+    box-shadow: 0 0 10px silver;
 }
