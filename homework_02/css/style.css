@@ -107,3 +107,11 @@ p:first-letter {
 h2 + p {
     font-style: italic;
 }
+
+
+/* Task 8 */
+
+.tm-content-box .tm-team-description-container p {
+    text-indent: 20px;
+    line-height: 1.8;
+}
