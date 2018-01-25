@@ -150,3 +150,10 @@ h2 + p {
 .blocks .gallery-container h2 + p:first-letter {
     color: black;
 }
+
+
+/* Task 11 */
+
+.tm-nav-item:not(:last-child) {
+    border-bottom: 1px solid silver;
+}
