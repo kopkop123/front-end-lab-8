@@ -92,3 +92,11 @@ p:first-letter {
 .gallery-container a > img {
     border: 2px solid silver;
 }
+
+
+/* Task 6 */
+
+.carousel .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
