@@ -50,14 +50,14 @@ write your code here
     }
 
     .flex-item {
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
 
     .tm-team-description-container {
         max-width: 100%;
-        padding-top: 0;
         padding-bottom: 0;
+        padding-top: 0;
         text-align: left;
     }
 
@@ -138,4 +138,15 @@ h2 + p {
     display: inline-block;
     font-size: 10px;
     vertical-align: super;
+}
+
+
+/* Task 10 */
+
+.blocks .box-bg {
+    background-color: #f2f2f2;
+}
+
+.blocks .gallery-container h2 + p:first-letter {
+    color: black;
 }
