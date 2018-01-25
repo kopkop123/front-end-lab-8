@@ -85,3 +85,10 @@ p:first-letter {
 .tm-content-box {
     box-shadow: 0 0 10px silver;
 }
+
+
+/* Task 5 */
+
+.gallery-container a > img {
+    border: 2px solid silver;
+}
