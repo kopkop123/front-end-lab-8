@@ -96,6 +96,14 @@ p:first-letter {
     box-shadow: 0 0 10px silver;
 }
 
+.blocks {
+    box-shadow: 0 0 10px silver;
+}
+
+.blocks .tm-content-box {
+    box-shadow: none;
+}
+
 
 /* Task 5 */
 
