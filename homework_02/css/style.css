@@ -112,6 +112,30 @@ h2 + p {
 /* Task 8 */
 
 .tm-content-box .tm-team-description-container .tm-section-description {
-    text-indent: 20px;
     line-height: 1.8;
+    text-indent: 20px;
+}
+
+
+/* Task 9 */
+
+.heading a {
+    color: black;
+}
+
+.heading a:visited {
+    color: silver;
+}
+
+.heading a:hover {
+    color: #85d2db;
+}
+
+.heading ol li:first-child a:after,
+.heading ol li:nth-child(3) a:after {
+    color: red;
+    content: 'New';
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: super;
 }
