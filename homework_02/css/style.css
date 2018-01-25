@@ -165,3 +165,39 @@ input[type="text"],
 button[type="submit"] {
     color: red;
 }
+
+
+/* Task 13 */
+@media(max-width: 1140px), (max-height: 835px) {
+    body {
+        padding-top: 120px;
+    }
+
+    .tm-sidebar {
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .tm-nav-item:not(:last-child) {
+        border-bottom: 0;
+    }
+
+    .tm-main-nav {
+        padding: 0;
+    }
+
+    .tm-main-nav ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
