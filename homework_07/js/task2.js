@@ -1,27 +1,3 @@
-// let game = confirm("Do you want to play a game?");
-// let attempts = 3;
-// let startPeriod = 0;
-// let endPeriod = 5;
-// let prize = 10;
-// let totalPrize = 0;
-//
-// let rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
-//     rand = Math.round(rand);
-//
-//     console.log(rand);
-
-// if(game) {
-//     let level1 = prompt(`Enter a number from ${startPeriod} to ${endPeriod} \n
-//                          Attempts left: ${attempts}\n
-//                          Total prize: ${totalPrize}\n
-//                          Possible prize on current attempt: ${prize}$`, "");
-//
-//
-// } else {
-//     console.log("You did not become a millionaire");
-// }
-
-// let euro = prompt(`Enter amount of euro ${a} \n rerere: ${a}`, "");
 for(let i = 0; ; i++) {
     let game = confirm("Do you want to play a game?");
     let startPrize = 10;
@@ -35,7 +11,7 @@ for(let i = 0; ; i++) {
     let rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
         rand = Math.round(rand);
 
-    console.log(rand);
+    // console.log(rand);
 
     if(game) {
         for(let j = 0; ; j++) {
@@ -53,7 +29,7 @@ for(let i = 0; ; i++) {
                     endPeriod *= 2;
                     rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
                     rand = Math.round(rand);
-                    console.log(rand);
+                    // console.log(rand);
                 } else {
                     console.log(`Thank you for a game. Your prize is: ${totalPrize}$`);
                     break;
@@ -75,6 +51,4 @@ for(let i = 0; ; i++) {
         console.log("You did not become a millionaire");
         break;
     }
-
-    // break;
 }
