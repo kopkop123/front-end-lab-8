@@ -11,7 +11,7 @@ const euroExchange = 33.2324;
 const dollarExchange = 27.1240;
 
 
-if(!isFinite(euro) || euro <= 0) {
+if(!isFinite(euro)) {
     startEuro = "'enter correct amount of euro'";
 } else {
     startEuro = parseFloat(euro);
@@ -25,7 +25,7 @@ if(!isFinite(euro) || euro <= 0) {
     }
 }
 
-if(!isFinite(dollar) || dollar <= 0) {
+if(!isFinite(dollar)) {
     startDollar = "'enter correct amount of dollar'";
 } else {
     startDollar = parseFloat(dollar);
