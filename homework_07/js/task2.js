@@ -1,46 +1,80 @@
-let euro = prompt("Enter amount of euro", "");
-let dollar = prompt("Enter amount of dollar", "");
-let message = null;
-let startEuro = null;
-let resultEuroUah = null;
-let startDollar = null;
-let resultDollarUah = null;
-let oneEuro = null;
+// let game = confirm("Do you want to play a game?");
+// let attempts = 3;
+// let startPeriod = 0;
+// let endPeriod = 5;
+// let prize = 10;
+// let totalPrize = 0;
+//
+// let rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
+//     rand = Math.round(rand);
+//
+//     console.log(rand);
 
-const euroExchange = 33.2324;
-const dollarExchange = 27.1240;
+// if(game) {
+//     let level1 = prompt(`Enter a number from ${startPeriod} to ${endPeriod} \n
+//                          Attempts left: ${attempts}\n
+//                          Total prize: ${totalPrize}\n
+//                          Possible prize on current attempt: ${prize}$`, "");
+//
+//
+// } else {
+//     console.log("You did not become a millionaire");
+// }
+
+// let euro = prompt(`Enter amount of euro ${a} \n rerere: ${a}`, "");
+for(let i = 0; ; i++) {
+    let game = confirm("Do you want to play a game?");
+    let startPrize = 10;
+    let attempts = 3;
+    let startPeriod = 0;
+    let endPeriod = 5;
+    let prize = 10;
+    let totalPrize = 0;
+    let answer = null;
+
+    let rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
+        rand = Math.round(rand);
+
+    console.log(rand);
+
+    if(game) {
+        for(let j = 0; ; j++) {
+            let level1 = prompt(`Enter a number from ${startPeriod} to ${endPeriod} \nAttempts left: ${attempts}\nTotal prize: ${totalPrize}$\nPossible prize on current attempt: ${prize}$`, "");
+            answer = parseInt(level1);
+
+            if(answer === rand) {
+                let gameContinue = confirm("Do you want to continue a game?");
+                totalPrize += prize;
+
+                if(gameContinue) {
+                    attempts = 3;
+                    startPrize *= 3;
+                    prize = startPrize;
+                    endPeriod *= 2;
+                    rand = startPeriod - 0.5 + Math.random() * (endPeriod - startPeriod + 1);
+                    rand = Math.round(rand);
+                    console.log(rand);
+                } else {
+                    console.log(`Thank you for a game. Your prize is: ${totalPrize}$`);
+                    break;
+                }
+            } else {
+                attempts--;
+                prize = Math.floor(prize / 2);
+            }
+
+            if(attempts < 1) {
+                console.log(`Thank you for a game. Your prize is: ${totalPrize}$`);
+                break;
+            }
+        }
 
 
-if(!isFinite(euro)) {
-    startEuro = "'enter correct amount of euro'";
-} else {
-    startEuro = parseFloat(euro);
-    resultEuroUah = startEuro * euroExchange;
 
-    if(resultEuroUah % 1 !== 0) {
-        resultEuroUah = Math.round(resultEuroUah * 100) / 100;
-        resultEuroUah = `${resultEuroUah.toFixed(2)}`;
     } else {
-        resultEuroUah = `${resultEuroUah}`;
+        console.log("You did not become a millionaire");
+        break;
     }
+
+    // break;
 }
-
-if(!isFinite(dollar)) {
-    startDollar = "'enter correct amount of dollar'";
-} else {
-    startDollar = parseFloat(dollar);
-    resultDollarUah = startDollar * dollarExchange;
-
-    if(resultDollarUah % 1 !== 0) {
-        resultDollarUah = Math.round(resultDollarUah * 100) / 100;
-        resultDollarUah = `${resultDollarUah.toFixed(2)}`;
-    } else {
-        resultDollarUah = `${resultDollarUah}`;
-    }
-}
-
-oneEuro = Math.round((euroExchange / dollarExchange) *100) / 100 ;
-
-message = `${startEuro} euros are equal ${resultEuroUah} UAH, ${startDollar} dollars are equal ${resultDollarUah} UAH, one euro is equal ${oneEuro} dollars.`;
-
-console.log(message);
