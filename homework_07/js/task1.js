@@ -3,24 +3,24 @@ let counter = "[~]";
 let space = "   ";
 let wrap = "\n";
 
-let t = "";
+let result = "";
 
 if(number > 0 && number <= 20) {
     for(let i = 1; i <= number; i++) {
         for(let j = number; j > 0; j--) {
             if(j <= i) {
-                t += counter;
+                result += counter;
 
                 if(j > 1) {
-                    t += counter;
+                    result += counter;
                 }
             } else {
-                t += space;
+                result += space;
             }
         }
-        t += wrap;
+        result += wrap;
     }
-    console.log(t);
+    console.log(result);
 } else {
     console.log("Incorrect!");
 }
