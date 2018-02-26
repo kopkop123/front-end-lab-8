@@ -1,0 +1,48 @@
+/* Your styles goes here */
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none
+}
+
+i {
+  color: #edbc0c;
+}
+
+.file i {
+  color: #babbba;
+}
+
+.empty {
+  font-style: italic;
+  display: none;
+}
+
+.subfolder {
+  margin-left: 10px;
+  display: none;
+}
+
+.folder-name,
+.file {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.folder-name:hover,
+.file:hover {
+  background-color: #eeefee;
+}
+
+.folder.open > .subfolder,
+.folder.open > .empty {
+  display: block;
+}
