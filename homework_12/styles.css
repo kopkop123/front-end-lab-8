@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+
+body {
+    background: #222124;
+}
+
+.container {
+    margin-left: 15px;
+    width: 1440px;
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 25px;
+}
+
+.flex-item {
+    text-align: center;
+    margin-right: 25px;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+
+.flex-item:hover {
+    background-color: #2c2c2c;
+}
+
+.tank-model {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d6d1ba;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: inline-block;
+    max-width: 220px;
+    vertical-align: bottom;
+}
+
+.tank-level {
+    color: #a19e89;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tank-picture {
+    display: block;
+    max-width: 260px;
+    max-height: 260px;
+}
+
+h1 {
+    color: #a19e89;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.title {
+    margin: 25px 0;
+    color: #9da285;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tank-details {
+    margin: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tank-details h1 {
+    margin-left: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.level {
+    text-transform: none;
+}
+
+.back-link {
+    color: #9da285;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.detail-flag {
+    margin-right: 15px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+table {
+    border-collapse: collapse;
+    color: #d3d6b4;
+    width: 100%;
+}
+
+td {
+    padding: 9px 24px;
+    border: 1px solid #9da285;
+    max-width: 300px;
+}
+
+td:first-child {
+    max-width: 700px;
+}
